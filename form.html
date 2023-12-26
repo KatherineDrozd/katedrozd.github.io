@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗАО Птицефабрика №1</title>
+</head>
+<style>
+    .field {clear:both; text-align:right;} <!--выравнивание каждого дива-->
+.field {clear:both; text-align:right;}
+label {float:left;} <!--выравнивание лейблов-->
+.field {clear:both; text-align:center;}
+label {float:center;}
+.main {float:left} <!--обтекание каждого блока-->
+.field {clear:both; text-align:center; line-height:25px;}
+label {float:center; padding-right:20px;}
+.main {float:center}
+.block {clear:both; text-align:center;} <!--обтекание этого блока-->
+</style>
+<body>
+    <h1>ЗАО Птицефабрика №1</h1>
+    <form>
+        <div class="main">
+        <div class="field">
+        <label>Фамилия</label>
+        <input type="text" name="lasttname" id="lastname"><br>
+        </form>
+        </div>
+        <div class="field">
+       <label>Инициалы</label>
+        <input type="text" name="initials" id="inintials"><br>
+       </div>
+       <div class="field">
+        <label>Пароль</label>
+        <input type="password"><br>
+       </div>
+       <div class="field">
+       <label> Адресс получателя</label>
+        <input type="text" name="address" id="address"><br>
+       </div>
+        <div class="field">
+        <label>Количество</label>
+        <input type="text" name="amount" id="amount"><br>
+        </div>
+        <div class="field">
+        <p><label>Тип</label>
+            <select name="Type">
+              <option value="1">Куриные</option>
+              <option value="2">Перепилиные</option>
+            </select>
+            <select name="Type2">
+                <option value="1">Отборные</option>
+                <option value="2">Высшая категория</option>
+              </select>
+          </p>
+          </div>   
+          Доставка
+          <input type="radio" name="delivery">
+          <block for="post">Почтой</block>
+          <input type="radio" name="delivery">
+          <block for="electronically">Электронно</block>
+          <input type="radio" name="delivery">
+          <block for="express">Курьером</blockl><br>
+          <div class="field">
+            
+          <label>Требуется накладная</label>
+          <input type="checkbox"><br>
+          <div class="field">
+         <label>Дополнительная информация</label> 
+          <textarea name="comments"></textarea><br>
+          <input type="submit">
+          <input type="reset">
+          </div>
+          </div>
+      </form>
+    </label>
+</body>
+</html>
